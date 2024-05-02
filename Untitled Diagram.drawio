@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-02T16:05:12.472Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="9bBX4XHReeFcnoXJh_aT" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-02T16:13:03.297Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="fEqpkbJkFOj-sLdXVYaV" version="24.3.1" type="github">
   <diagram name="Page-1" id="XZk4y257_CPvYdPWEkeV">
-    <mxGraphModel dx="1763" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3800" dy="1210" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -123,34 +123,34 @@
         <mxCell id="l6isEbVxny_hH4SEJy2Z-11" value="&lt;div&gt;V0.1&lt;/div&gt;&lt;div&gt;for debian-distros&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-340" y="120" width="65" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="l6isEbVxny_hH4SEJy2Z-14" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;entryX=-0.057;entryY=0.595;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" target="l6isEbVxny_hH4SEJy2Z-15">
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-14" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;labelBackgroundColor=none;fontColor=default;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="l6isEbVxny_hH4SEJy2Z-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-590" y="760" as="sourcePoint" />
-            <mxPoint x="-390" y="840" as="targetPoint" />
+            <mxPoint x="-1090" y="750" as="sourcePoint" />
+            <mxPoint x="-1000" y="790" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-590" y="840" />
+              <mxPoint x="-1000" y="720" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-15" value="RESTfull API" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-490" y="800" width="70" height="70" as="geometry" />
+          <mxGeometry x="-1030" y="795.31" width="70" height="70" as="geometry" />
         </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-16" value="" style="endArrow=classic;html=1;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="l6isEbVxny_hH4SEJy2Z-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-360" y="790" as="sourcePoint" />
-            <mxPoint x="-380" y="835" as="targetPoint" />
+            <mxPoint x="-900" y="785.31" as="sourcePoint" />
+            <mxPoint x="-920" y="830.31" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-19" value="&lt;div&gt;selenium/&lt;/div&gt;&lt;div&gt;scrapy&lt;/div&gt;&lt;div&gt;pylibs for scraping&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-270" y="800" width="70" height="70" as="geometry" />
+          <mxGeometry x="-815" y="792.81" width="70" height="70" as="geometry" />
         </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-21" value="Proxy Scrape&lt;br&gt;[flask/django*]" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-380" y="800" width="67.5" height="67.5" as="geometry" />
+          <mxGeometry x="-920" y="795.31" width="67.5" height="67.5" as="geometry" />
         </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-23" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" target="l6isEbVxny_hH4SEJy2Z-19">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-310" y="835" as="sourcePoint" />
-            <mxPoint x="-260" y="790" as="targetPoint" />
+            <mxPoint x="-850" y="830.31" as="sourcePoint" />
+            <mxPoint x="-800" y="785.31" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-32" value="Logout feature" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=default;" vertex="1" parent="1">
@@ -198,16 +198,6 @@
         <mxCell id="l6isEbVxny_hH4SEJy2Z-53" value="&lt;div&gt;user runs&lt;/div&gt;&lt;div&gt;[chain lenght]&lt;/div&gt;&lt;div&gt;[priority]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="159.99999999999977" y="500" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="l6isEbVxny_hH4SEJy2Z-55" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.406;exitY=-0.048;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="l6isEbVxny_hH4SEJy2Z-21" target="l6isEbVxny_hH4SEJy2Z-53">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-190" y="760" as="sourcePoint" />
-            <mxPoint x="-140" y="710" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="-353" y="630" />
-              <mxPoint x="200" y="620" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-57" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="l6isEbVxny_hH4SEJy2Z-53" target="l6isEbVxny_hH4SEJy2Z-58">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="50" y="700" as="sourcePoint" />
@@ -230,13 +220,48 @@
         <mxCell id="l6isEbVxny_hH4SEJy2Z-60" value="&lt;b&gt;&lt;font color=&quot;#3333ff&quot; style=&quot;font-size: 20px;&quot;&gt;GUI&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="80" y="975.31" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="l6isEbVxny_hH4SEJy2Z-61" value="&lt;div&gt;showing the list &lt;br&gt;&lt;/div&gt;&lt;div&gt;of connect IP&#39;s&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-61" value="&lt;div&gt;showing the list &lt;br&gt;&lt;/div&gt;&lt;div&gt;of connect IP&#39;s&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[status check]&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="310" y="660" width="81" height="85" as="geometry" />
         </mxCell>
         <mxCell id="l6isEbVxny_hH4SEJy2Z-62" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="l6isEbVxny_hH4SEJy2Z-58" target="l6isEbVxny_hH4SEJy2Z-61">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="180" y="800" as="sourcePoint" />
             <mxPoint x="230" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-63" value="&lt;div&gt;config parser(python)&lt;/div&gt;&lt;div&gt;to parse info from &lt;br&gt;&lt;/div&gt;&lt;div&gt;.conf file&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="665.31" width="90" height="74.69" as="geometry" />
+        </mxCell>
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-64" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="l6isEbVxny_hH4SEJy2Z-63" target="l6isEbVxny_hH4SEJy2Z-61">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="840" as="sourcePoint" />
+            <mxPoint x="370" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-65" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="l6isEbVxny_hH4SEJy2Z-63">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-590" y="760" as="sourcePoint" />
+            <mxPoint x="100" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-590" y="1080" />
+              <mxPoint x="20" y="1080" />
+              <mxPoint x="655" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-66" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="l6isEbVxny_hH4SEJy2Z-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-910" y="945.31" as="sourcePoint" />
+            <mxPoint x="-886" y="935.31" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-68" value="&lt;div&gt;request/subprocess&lt;/div&gt;&lt;div&gt;to pipe scraped info to script&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-950" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l6isEbVxny_hH4SEJy2Z-71" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="l6isEbVxny_hH4SEJy2Z-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="710" as="sourcePoint" />
+            <mxPoint x="360" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

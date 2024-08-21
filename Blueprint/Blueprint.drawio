@@ -234,9 +234,6 @@
         <mxCell id="l6isEbVxny_hH4SEJy2Z-15" value="RESTfull API" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="-1080" y="795.31" width="74.69" height="74.69" as="geometry" />
         </mxCell>
-        <mxCell id="5yDUeMpjYAQJa8jO-ttr-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lrqvdLVCCD_kgyAXPWSx-7" target="lrqvdLVCCD_kgyAXPWSx-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

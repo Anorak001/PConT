@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Function to run commands with sudo
 run_with_sudo() {

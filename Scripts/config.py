@@ -4,10 +4,10 @@ import subprocess
 
 # ------------------------------------------------------
 # Define the command to call the scraper script
-command = "python /path/to/other_script.py"
+#command = "python /path/to/other_script.py"
 
 # Call the other script using subprocess.Popen()
-subprocess.call(command, shell=True)
+#subprocess.call(command, shell=True)
 
 # ----------------------------------------------------
 # Path to proxychains.conf file

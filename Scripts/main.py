@@ -8,11 +8,11 @@ base_path = os.path.dirname(os.path.abspath(__file__))
 # Paths to the scripts relative to the base directory
 scraper_path = os.path.join(base_path, "PCont", "scraper.py")
 intro_path = os.path.join(base_path, "PCont", "intro.py")
-config_path = os.path.join(base_path, "PCont", "config.py")  # Updated name
+configurator_path = os.path.join(base_path, "PCont", "configurator.py")  # Updated name
 
 def run_script(script_path):
     try:
-        subprocess.run(["python", script_path], check=True)
+        subprocess.run(["sudo", "python", script_path], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Error running {script_path}: {e}", file=sys.stderr)
 
@@ -23,8 +23,8 @@ def main():
     # Run intro.py
     run_script(intro_path)
     
-    # Run config.py
-    run_script(config_path)  # Updated name
+    # Run configurator.py
+    run_script(configurator_path)  # Updated name
 
 if __name__ == "__main__":
     main()

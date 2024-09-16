@@ -8,7 +8,7 @@ base_path = os.path.dirname(os.path.abspath(__file__))
 # Paths to the scripts relative to the base directory
 scraper_path = os.path.join(base_path, "PCont", "scraper.py")
 intro_path = os.path.join(base_path, "PCont", "intro.py")
-configurator_path = os.path.join(base_path, "PCont", "configurator.py")  # Updated name
+config_path = os.path.join(base_path, "PCont", "config.py")  
 
 def run_script(script_path):
     try:
@@ -24,7 +24,7 @@ def main():
     run_script(intro_path)
     
     # Run configurator.py
-    run_script(configurator_path)  # Updated name
+    run_script(config_path)  
 
 if __name__ == "__main__":
     main()

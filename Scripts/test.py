@@ -10,7 +10,7 @@ command = "python /path/to/other_script.py"
 subprocess.call(command, shell=True)
 
 # ----------------------------------------------------
-# path to config file
+# Path to config file
 config_file = "/etc/proxyhains.conf"
 
 # Define the chain options
@@ -27,6 +27,12 @@ def is_proxy_online(ip):
     # 0==success and -1==fail
     return response == 0
 
+# Function to extract IP from proxy string
+def extract_ip(proxy):
+    # Split on "://" to remove protocol and split again on ":" to remove the port
+    return proxy.split("://")[-1].split(":")[0]
+
+# Function to get user configuration
 def get_user_config():
     # Read config file content if it exists
     try:
@@ -44,50 +50,38 @@ def get_user_config():
 
     return config
 
-# Function to strip out protocol and port
-def extract_ip(proxy):
-    # Split on "://" to remove protocol and split again on ":" to remove the port
-    return proxy.split("://")[-1].split(":")[0]
-
-# Function to build the proxy chain
-def build_proxy_chain(online_proxies, chain_length):
-    # Select the first 'chain_length' proxies from the list
-    return online_proxies[:chain_length]
-
-# Load proxies from the free_proxies.txt file
-with open("free_proxies.txt") as f:
-    proxies = f.readlines()
-
-# Function to check proxies and build the chain based on user's configuration
-def check_proxies_and_build_chain(proxies, config):
+# Function to check only the required number of proxies
+def check_required_proxies(proxies, required_length):
     online_proxies = []
-    offline_proxies = []
-
-    # Only check proxies and build the chain after user input
+    
     for proxy in proxies:
+        # Stop checking once we've found enough active proxies
+        if len(online_proxies) >= required_length:
+            break
+        
         # Remove newline character from the end of the line
         proxy = proxy.strip()
 
         # Extract IP from the proxy string
         ip = extract_ip(proxy)
 
-        # Check if the proxy is online and add to the appropriate list
+        # Check if the proxy is online and add to the list
         if is_proxy_online(ip):
             online_proxies.append(proxy)
-        else:
-            offline_proxies.append(proxy)
 
-    # Build the proxy chain based on the online proxies and chain length
-    selected_proxies = build_proxy_chain(online_proxies, config["chain_length"])
+    return online_proxies
 
-    return selected_proxies
+# Load proxies from the free_proxies.txt file
+with open("free_proxies.txt") as f:
+    proxies = f.readlines()
 
 # Get user configuration
 config = get_user_config()
 
-# Check proxies and build the chain after user selects configuration
-selected_proxies = check_proxies_and_build_chain(proxies, config)
+# Check only the required number of proxies based on user input
+selected_proxies = check_required_proxies(proxies, config["chain_length"])
 
+# Output the selected proxies for the chain
 print("Selected Proxies for the chain:")
 for proxy in selected_proxies:
     print(proxy)

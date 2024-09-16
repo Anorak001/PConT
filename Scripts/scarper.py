@@ -6,11 +6,13 @@ base_url = "https://api.proxyscrape.com/v3/free-proxy-list/get?request=displaypr
 # Make the request to the API and get the response
 response = requests.get(base_url)
 
-# Counter to check for success of the response
+# Check if the request was successful
 if response.status_code == 200:
-    # Write all the proxies that have been acquired into a file named "free_proxies.txt"
-    with open('free_proxies.txt', 'w') as f:
-        f.write(response.text)  # Write the raw response text directly into the file
-
+    # Check if the content is as expected (not empty)
+    if response.text.strip():  # Ensure the content is not empty
+        # Write all the proxies that have been acquired into a file named "free_proxies.txt"
+        with open('free_proxies.txt', 'w') as f:
+            f.write(response.text)
 else:
-    print("Error: Unable to access the API. Response status code:", response.status_code)
+    # Optionally handle error without printing
+    pass  # You can log or handle it in a way suitable for integration

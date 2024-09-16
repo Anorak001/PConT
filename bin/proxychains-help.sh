@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Display help information for proxychains
 echo "Usage: proxychains [options] <command> [args...]"

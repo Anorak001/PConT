@@ -32,7 +32,7 @@ def print_bold_text():
     # Define the text for each section
    
     header_text = "Proxy Automation Tool"
-    footer_text = "By Anorak"
+    footer_text = "By Anorak001"
 
     # Print the bold text with color
     

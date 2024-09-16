@@ -1,25 +1,75 @@
+import os
+import json
 import requests
+import subprocess
+# ------------------------------------------------------
+# Define the command to call the scraper script
+command = "python /path/to/other_script.py"
 
-# Define the base URL for the API
-base_url = "https://api.proxyscrape.com/v3/free-proxy-list/get?request=displayproxies&proxy_format=protocolipport&format=text"
+# Call the other script using subprocess.Popen()
+subprocess.call(command, shell=True)
 
-# Make the request to the API and get the response
-response = requests.get(base_url)
+# ----------------------------------------------------
+# path to config file
+config_file = "/etc/proxyhains.conf"
 
-# Check if the request was successful
-if response.status_code == 200:
-    print("Request successful. Status code:", response.status_code)
+# Define the chain options
+chains = {
+    "strict": "Strict Chain",
+    "random": "Random Chain",
+    "dynamic": "Dynamic Chain"
+}
 
-    # Print out the response content to verify what is being returned
-    print("Response Content:\n", response.text)
+# Check if the proxy is up
+def is_proxy_online(ip):
+    # Send ping command and wait for response
+    response = os.system("ping -c 1 {}".format(ip))
 
-    # Check if the content is as expected (not empty)
-    if response.text.strip():  # Ensure the content is not empty
-        # Write all the proxies that have been acquired into a file named "free_proxies.txt"
-        with open('free_proxies.txt', 'w') as f:
-            f.write(response.text)
-        print("Proxies have been written to 'free_proxies.txt'")
+    # 0==success and -1==fail
+    return response == 0
+
+def get_user_config():
+    # Read config file content if it exists
+    try:
+        with open(config_file) as f:
+            config = json.load(f)
+    except FileNotFoundError:
+        config = {}
+
+    chain = input("Enter the chain type (strict, random, dynamic): ")
+    chain_length = int(input("Enter the length of the chain (0-25): "))
+
+    # Update config with user inputs
+    config["chain"] = chain
+    config["chain_length"] = chain_length
+
+    return config
+
+# Function to strip out protocol and port
+def extract_ip(proxy):
+    # Split on "://" to remove protocol and split again on ":" to remove the port
+    return proxy.split("://")[-1].split(":")[0]
+
+# Load proxies from the free_proxies.txt file
+with open("free_proxies.txt") as f:
+    proxies = f.readlines()
+
+online_proxies = []
+offline_proxies = []
+
+for proxy in proxies:
+    # Remove newline character from the end of the line
+    proxy = proxy.strip()
+
+    # Extract IP from the proxy string
+    ip = extract_ip(proxy)
+    
+    if is_proxy_online(ip):
+        online_proxies.append(proxy)
     else:
-        print("Warning: The response content is empty.")
-else:
-    print("Error: Unable to access the API. Response status code:", response.status_code)
+        offline_proxies.append(proxy)
+
+config = get_user_config()
+print("Selected Proxies:")
+for proxy in online_proxies:
+    print(proxy)

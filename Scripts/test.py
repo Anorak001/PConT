@@ -10,14 +10,14 @@ command = "python /path/to/other_script.py"
 subprocess.call(command, shell=True)
 
 # ----------------------------------------------------
-# Path to config file
-config_file = "/etc/proxyhains.conf"
+# Path to proxychains.conf file
+config_file = "/etc/proxychains.conf"
 
 # Define the chain options
 chains = {
-    "strict": "Strict Chain",
-    "random": "Random Chain",
-    "dynamic": "Dynamic Chain"
+    "strict": "strict_chain",
+    "random": "random_chain",
+    "dynamic": "dynamic_chain"
 }
 
 # Check if the proxy is up
@@ -31,6 +31,14 @@ def is_proxy_online(ip):
 def extract_ip(proxy):
     # Split on "://" to remove protocol and split again on ":" to remove the port
     return proxy.split("://")[-1].split(":")[0]
+
+# Function to extract protocol and port from proxy string
+def extract_protocol_port(proxy):
+    protocol = proxy.split("://")[0]
+    ip_port = proxy.split("://")[-1]
+    ip = ip_port.split(":")[0]
+    port = ip_port.split(":")[1]
+    return protocol, ip, port
 
 # Function to get user configuration
 def get_user_config():
@@ -71,6 +79,18 @@ def check_required_proxies(proxies, required_length):
 
     return online_proxies
 
+# Function to write the selected chain and proxies to proxychains.conf
+def write_to_proxychains_conf(chain_type, proxies):
+    with open(config_file, 'w') as f:
+        # Write the chain type
+        f.write(f"{chain_type}\n\n")
+        f.write("[ProxyList]\n")
+        
+        # Write each proxy in the correct format
+        for proxy in proxies:
+            protocol, ip, port = extract_protocol_port(proxy)
+            f.write(f"{protocol} {ip} {port}\n")
+
 # Load proxies from the free_proxies.txt file
 with open("free_proxies.txt") as f:
     proxies = f.readlines()
@@ -81,7 +101,9 @@ config = get_user_config()
 # Check only the required number of proxies based on user input
 selected_proxies = check_required_proxies(proxies, config["chain_length"])
 
-# Output the selected proxies for the chain
-print("Selected Proxies for the chain:")
+# Write the configuration to the proxychains.conf file
+write_to_proxychains_conf(chains[config["chain"]], selected_proxies)
+
+print("Proxies written to proxychains.conf:")
 for proxy in selected_proxies:
     print(proxy)

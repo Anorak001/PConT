@@ -4,7 +4,7 @@
 
 
 
- ![build](Docs/project-outline/Screenshot.png)
+ ![build](/Docs/project-outline/Screenshot.png)
 
  
 ## Features

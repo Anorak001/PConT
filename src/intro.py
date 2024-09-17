@@ -3,7 +3,6 @@ def print_art():
     hacker_green = "\033[92m"  # Bright green
     reset_color = "\033[0m"    # Reset to default color
 
-    # Define the ASCII art as multi-line strings
     tool_art = f"""
 {hacker_green}██████╗  ██████╗ ██████╗ ███╗   ██╗████████╗
 ██╔══██╗██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝

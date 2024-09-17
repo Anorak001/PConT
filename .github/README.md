@@ -1,4 +1,4 @@
-# PConT - Proxy Connection Tool
+# PConT - Proxy Automation Tool
 
 **PConT** is a powerful and flexible Proxy Connection Tool designed to automate the acquisition and management of proxies, providing seamless integration with other tools. It is built with Python and is aimed at cybersecurity enthusiasts and professionals who require an efficient way to handle proxy connections(also saves a Lot of Time!!!).
 

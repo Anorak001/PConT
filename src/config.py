@@ -3,7 +3,7 @@ import sys
 import subprocess
 import time
 
-# Configuration file paths
+# Configuration file paths 
 proxychains_conf_path = '/etc/proxychains.conf'
 proxychains4_conf_path = '/etc/proxychains4.conf'
 
@@ -53,7 +53,7 @@ def get_user_config():
             raise ValueError("Invalid choice")
     except ValueError as e:
         print(f"Invalid input: {e}. Using default 'Strict Chain'.")
-        choice = 1  # Default to strict_chain
+        choice = 1  # Defaults to strict_chain
 
     chain_type = chains[choice]
 
@@ -82,7 +82,7 @@ def check_required_proxies(proxies, required_length):
     """Check only the required number of proxies with a custom progress bar."""
     online_proxies = []
     
-    # Track progress
+
     print("Checking proxies:")
     
     for i, proxy in enumerate(proxies):
@@ -153,7 +153,7 @@ def main():
     print("To use proxychains, run your commands with proxychains like this:")
  
     print("  proxychains <command>")
-       print(" ")
+    print(" ")
     print("For example, to run curl through proxychains:")
     print("  proxychains curl http://example.com")
     print(" ")

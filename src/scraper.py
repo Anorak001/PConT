@@ -1,6 +1,6 @@
 import requests
 
-# Define the base URL for the API
+# base URL for the API
 base_url = "https://api.proxyscrape.com/v3/free-proxy-list/get?request=displayproxies&proxy_format=protocolipport&format=text"
 
 # Make the request to the API and get the response
@@ -14,5 +14,5 @@ if response.status_code == 200:
         with open('free_proxies.txt', 'w') as f:
             f.write(response.text)
 else:
-    # Optionally handle error without printing
-    pass  # You can log or handle it in a way suitable for integration
+   
+    pass  #  log or handle it in a way suitable for integration

@@ -14,7 +14,7 @@
           <mxGeometry x="10" y="120" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5" value="Main Script (PConT.sh)" style="rounded=1;html=1;fillColor=#7FFF00;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="550" y="200" width="180" height="60" as="geometry" />
+          <mxGeometry x="425" y="250" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6" value="Logging &amp; Error Handling" style="rounded=1;html=1;fillColor=#4682B4;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="350" y="500" width="180" height="60" as="geometry" />

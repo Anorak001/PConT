@@ -28,11 +28,8 @@
         <mxCell id="9" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="10" style="endArrow=block;strokeColor=#20B2AA;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520.0046541216445" y="139.99287834032089" as="sourcePoint" />
-            <mxPoint x="503.1236363636365" y="510.01" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="10" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="11" value="Install Dependencies" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="60" y="290" width="160" height="50" as="geometry" />

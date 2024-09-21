@@ -54,7 +54,7 @@
           <mxGeometry x="350" y="300" width="140" height="50" as="geometry" />
         </mxCell>
         <mxCell id="16" value="Storing Proxies" style="rounded=1;html=1;fillColor=#FFFF99;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="350" y="370" width="140" height="50" as="geometry" />
+          <mxGeometry x="460" y="690" width="140" height="50" as="geometry" />
         </mxCell>
         <mxCell id="17" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="4" target="15" edge="1">
           <mxGeometry relative="1" as="geometry" />

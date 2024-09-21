@@ -39,7 +39,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="11" value="Install Dependencies" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="50" y="330" width="160" height="50" as="geometry" />
+          <mxGeometry x="60" y="290" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="12" value="Run Configuration" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="190" y="370" width="140" height="50" as="geometry" />

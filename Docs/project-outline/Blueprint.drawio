@@ -7,11 +7,6 @@
         <mxCell id="2" value="PConT" style="ellipse;html=1;fillColor=#1E90FF;fontColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="50" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="ToqqUT2yW8Nn5zUCMZbP-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="120" y="80" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="3" value="Setup Script" style="rounded=1;html=1;fillColor=#FF6347;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="150" y="200" width="140" height="60" as="geometry" />
         </mxCell>

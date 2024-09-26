@@ -7,9 +7,6 @@
         <mxCell id="2" value="PConT" style="ellipse;html=1;fillColor=#1E90FF;fontColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="50" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Setup Script" style="rounded=1;html=1;fillColor=#FF6347;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="150" y="200" width="140" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="4" value="Proxy Acquisition" style="rounded=1;html=1;fillColor=#FFD700;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="350" y="200" width="160" height="60" as="geometry" />
         </mxCell>
@@ -19,8 +16,10 @@
         <mxCell id="6" value="Logging &amp; Error Handling" style="rounded=1;html=1;fillColor=#4682B4;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="350" y="500" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="7" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="271.42857142857133" y="200" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="8" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="4" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -37,11 +36,15 @@
         <mxCell id="12" value="Run Configuration" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="190" y="370" width="140" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="13" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="3" target="11" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="13" style="endArrow=block;strokeColor=#20B2AA;" parent="1" target="11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="191.76470588235293" y="260" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="14" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="3" target="12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="14" style="endArrow=block;strokeColor=#20B2AA;" parent="1" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227.27272727272725" y="260" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="15" value="Scraping APIs" style="rounded=1;html=1;fillColor=#FFFF99;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="350" y="300" width="140" height="50" as="geometry" />

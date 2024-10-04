@@ -16,6 +16,9 @@
         <mxCell id="5" value="Main Script (PConT.sh)" style="rounded=1;html=1;fillColor=#7FFF00;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="550" y="200" width="180" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="6" value="Logging &amp; Error Handling" style="rounded=1;html=1;fillColor=#4682B4;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="270" y="500" width="180" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="7" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -25,10 +28,8 @@
         <mxCell id="9" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="10" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="366.81818181818176" y="500" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="10" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="11" value="Install Dependencies" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="60" y="290" width="160" height="50" as="geometry" />
@@ -84,15 +85,11 @@
         <mxCell id="26" value="Error Handling" style="rounded=1;html=1;fillColor=#6495ED;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="350" y="670" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="27" style="endArrow=block;strokeColor=#20B2AA;" parent="1" target="25" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="382.105263157895" y="560" as="sourcePoint" />
-          </mxGeometry>
+        <mxCell id="27" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="6" target="25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="28" style="endArrow=block;strokeColor=#20B2AA;" parent="1" target="26" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="372.72727272727275" y="560" as="sourcePoint" />
-          </mxGeometry>
+        <mxCell id="28" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="6" target="26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

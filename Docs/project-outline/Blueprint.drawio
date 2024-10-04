@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.16">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.17">
   <diagram id="complexProjectDiagram" name="PConT Complex Project Outline">
     <mxGraphModel dx="1674" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -17,7 +17,7 @@
           <mxGeometry x="550" y="200" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6" value="Logging &amp; Error Handling" style="rounded=1;html=1;fillColor=#4682B4;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="350" y="500" width="180" height="60" as="geometry" />
+          <mxGeometry x="270" y="500" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="3" edge="1">
           <mxGeometry relative="1" as="geometry" />

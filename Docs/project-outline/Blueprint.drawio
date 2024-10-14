@@ -29,11 +29,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="10" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="2" target="6" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="460" y="280" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="11" value="Install Dependencies" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="60" y="290" width="160" height="50" as="geometry" />

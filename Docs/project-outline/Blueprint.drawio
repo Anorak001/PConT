@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" version="24.7.17">
   <diagram id="complexProjectDiagram" name="PConT Complex Project Outline">
-    <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,7 +32,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="11" value="Install Dependencies" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="60" y="290" width="160" height="50" as="geometry" />
+          <mxGeometry x="-70" y="240" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="12" value="Run Configuration" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="190" y="370" width="140" height="50" as="geometry" />

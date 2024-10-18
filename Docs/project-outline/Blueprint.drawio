@@ -94,6 +94,9 @@
         <mxCell id="28" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="6" target="26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="FJ4AW9I1uFKjnBFw4ny1-29" value="Install Dependencies" style="rounded=1;html=1;fillColor=#FFA07A;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="160" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -91,9 +91,6 @@
         <mxCell id="28" style="endArrow=block;strokeColor=#20B2AA;" parent="1" source="6" target="26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-CW5s49q1_VzqYTSWpaX-28" value="Proxy Acquisition" style="rounded=1;html=1;fillColor=#FFD700;fontColor=#000000;fontStyle=4" vertex="1" parent="1">
-          <mxGeometry x="310" y="150" width="160" height="60" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

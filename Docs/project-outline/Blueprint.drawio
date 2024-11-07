@@ -11,6 +11,7 @@
         <mxCell id="3" value="Setup Script" style="rounded=1;html=1;fillColor=#FF6347;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="150" y="200" width="140" height="60" as="geometry" />
         </mxCell>
+
         <mxCell id="4" value="Proxy Acquisition" style="rounded=1;html=1;fillColor=#FFD700;fontColor=#000000;fontStyle=4" parent="1" vertex="1">
           <mxGeometry x="350" y="200" width="160" height="60" as="geometry" />
         </mxCell>

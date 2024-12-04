@@ -11,7 +11,7 @@
           <mxGeometry x="150" y="200" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4" value="Proxy Acquisition" style="rounded=1;html=1;fillColor=#FFD700;fontColor=#000000;fontStyle=4" parent="1" vertex="1">
-          <mxGeometry x="340" y="160" width="160" height="60" as="geometry" />
+          <mxGeometry x="350" y="200" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5" value="Main Script (PConT.sh)" style="rounded=1;html=1;fillColor=#7FFF00;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="550" y="200" width="180" height="60" as="geometry" />

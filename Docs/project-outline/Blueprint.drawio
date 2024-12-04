@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.8.9">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="25.0.1">
   <diagram id="complexProjectDiagram" name="PConT Complex Project Outline">
     <mxGraphModel dx="1674" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -9,9 +9,6 @@
         </mxCell>
         <mxCell id="3" value="Setup Script" style="rounded=1;html=1;fillColor=#FF6347;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="150" y="200" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nt7rnMxWny9pTKCcPuf3-28" value="Setup Script" style="rounded=1;html=1;fillColor=#FF6347;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="160" y="210" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4" value="Proxy Acquisition" style="rounded=1;html=1;fillColor=#FFD700;fontColor=#000000;fontStyle=4" parent="1" vertex="1">
           <mxGeometry x="350" y="200" width="160" height="60" as="geometry" />
